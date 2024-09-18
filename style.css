@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: black;
+    padding-right: 250px;
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+  }
+
+  header nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+  }
+
+  header nav a:hover {
+    color: #3498db;
+  }
+  
+  header nav a:hover::after {
+    width: 100%; 
+  }
+
+  .logo {
+    max-width: 150px;
+  }
+  
+  main {
+    background-color: #e0f7fa;
+    padding: 40px;
+    flex-grow: 1; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .main-text {
+    font-size: 24px;
+    max-width: 600px;
+  }
+  
+  .main-image {
+    width: 40vw; /* Define a largura como metade da tela (50% da largura da viewport) */
+    height: 600px; /* Mantém a altura original */
+    object-fit: cover; /* Corta a imagem para caber na nova largura */
+  }
+  
+  
+  .heart-image {
+    display: block;
+    margin-top: 20px;
+    max-width: 100px;
+  }
+  
+  footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  footer .column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  footer .column img {
+    margin-right: 10px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Seção de Projetos */
+.projects-content {
+  background-color: #e0f7fa;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-image {
+  width: 35%; 
+  height: auto;
+  object-fit: cover;
+}
+
+.project-details {
+  width: 45%; 
+}
+
+.project-details p {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Seção de Habilidades */
+.skills-content {
+  background-color: #e0f7fa; 
+  padding: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  height: 72vh;
+}
+
+.skills-section h3 {
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.skills-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-section li {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #34495e;
+}
+
+/* Seção de Contato */
+.contact-section {
+  background-color: #e0f7fa;
+  color: #000000;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  font-size: 38px;
+  height: 700px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.contact-icons .column {
+  flex: 1;
+  padding: 0 50px; 
+}
+
+.contact-icons p {
+  margin-bottom: 50px; 
+}
+
+
+.contact-icons svg {
+  margin-right: 8px;
+}
+
+.heart-icon {
+  margin-top: 40px;
+}
+
+.heart-image {
+  width: 100px; 
+}
